@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Shop Hook & Knots — modern fashion accessories designed for everyday expression."
+    >
+
+    <title>Shop — Hook & Knots</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         ANNOUNCEMENT BAR
+    ========================================== -->
+
+    <div class="announcement-bar">
+        <p>WELCOME TO HOOK &amp; KNOTS</p>
+    </div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            HOOK &amp; KNOTS
+        </a>
+
+
+        <nav class="desktop-nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html" class="active">
+                Shop
+            </a>
+
+            <a href="index.html#collections">
+                Collections
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button
+                class="icon-button"
+                id="searchButton"
+                aria-label="Search"
+            >
+                Search
+            </button>
+
+
+            <button
+                class="icon-button"
+                id="bagButton"
+                aria-label="Shopping bag"
+            >
+                Bag
+            </button>
+
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open menu"
+            >
+                Menu
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MOBILE MENU
+    ========================================== -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu"
+    >
+
+        <button
+            class="close-menu"
+            id="closeMenu"
+            aria-label="Close menu"
+        >
+            Close
+        </button>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="index.html#collections">
+                Collections
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <main>
+
+        <!-- =====================================
+             SHOP HERO
+        ====================================== -->
+
+        <section class="shop-hero">
+
+            <div>
+
+                <p class="eyebrow">
+                    HOOK &amp; KNOTS
+                </p>
+
+                <h1>
+                    Shop
+                </h1>
+
+                <p>
+                    Discover accessories designed
+                    to become part of your everyday style.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SHOP CONTROLS
+        ====================================== -->
+
+        <section class="shop-section">
+
+            <div class="shop-toolbar">
+
+                <p>
+                    <span id="productCount">
+                        8
+                    </span>
+                    products
+                </p>
+
+
+                <div class="shop-controls">
+
+                    <button
+                        class="filter-button"
+                        id="filterButton"
+                    >
+                        Filter
+                    </button>
+
+
+                    <select
+                        id="sortProducts"
+                        aria-label="Sort products"
+                    >
+
+                        <option value="featured">
+                            Featured
+                        </option>
+
+                        <option value="newest">
+                            Newest
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="price-high">
+                            Price: High to Low
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 FILTER PANEL
+            ================================== -->
+
+            <div
+                class="filter-panel"
+                id="filterPanel"
+            >
+
+                <div>
+
+                    <span>
+                        CATEGORY
+                    </span>
+
+                    <button data-filter="all">
+                        All
+                    </button>
+
+                    <button data-filter="accessories">
+                        Accessories
+                    </button>
+
+                    <button data-filter="new">
+                        New Arrivals
+                    </button>
+
+                    <button data-filter="statement">
+                        Statement
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 PRODUCT GRID
+            ================================== -->
+
+            <div
+                class="shop-product-grid"
+                id="productGrid"
+            >
+
+
+                <!-- PRODUCT 01 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="new"
+                    data-price="2500"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 01
+                            </span>
+
+                            <span class="product-label">
+                                NEW
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Signature Piece
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 2,500
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 02 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="accessories"
+                    data-price="1800"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 02
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Everyday Edit
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 1,800
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 03 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="statement"
+                    data-price="3200"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 03
+                            </span>
+
+                            <span class="product-label">
+                                BESTSELLER
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Statement Piece
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 3,200
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 04 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="accessories"
+                    data-price="2200"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 04
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                The Essential
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 2,200
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 05 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="new"
+                    data-price="2800"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 05
+                            </span>
+
+                            <span class="product-label">
+                                NEW
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Modern Classic
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 2,800
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 06 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="accessories"
+                    data-price="1900"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 06
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Daily Detail
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 1,900
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 07 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="statement"
+                    data-price="3500"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 07
+                            </span>
+
+                            <span class="product-label">
+                                EDIT
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                The Statement
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 3,500
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 08 -->
+
+                <article
+                    class="shop-product-card"
+                    data-category="accessories"
+                    data-price="2400"
+                >
+
+                    <a href="product.html">
+
+                        <div class="shop-product-image">
+
+                            <span>
+                                IMAGE 08
+                            </span>
+
+                            <button
+                                class="quick-view"
+                                type="button"
+                            >
+                                Quick View
+                            </button>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Essential Edit
+                            </h2>
+
+                            <p>
+                                Hook &amp; Knots
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            KSh 2,400
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-brand">
+
+            <h2>
+                HOOK &amp; KNOTS
+            </h2>
+
+            <p>
+                Modern accessories.<br>
+                Made for your expression.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <h3>
+                    Shop
+                </h3>
+
+                <a href="shop.html">
+                    All Products
+                </a>
+
+                <a href="#">
+                    New In
+                </a>
+
+                <a href="#">
+                    Collections
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    About
+                </h3>
+
+                <a href="index.html#about">
+                    Our Story
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Help
+                </h3>
+
+                <a href="#">
+                    Shipping
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Follow
+                </h3>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Hook &amp; Knots. All rights reserved.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
