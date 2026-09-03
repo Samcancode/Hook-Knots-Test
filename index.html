@@ -37,35 +37,15 @@
 </a>
     <nav class="desktop-nav">
 
-        <a href="#new">New In</a>
+        <a href="shop.html">Shop</a>
 
-        <div class="nav-dropdown">
-            <button class="nav-dropdown-button">
-                Shop
-            </button>
+        <a href="gallery.html">Gallery</a>
 
-            <div class="nav-dropdown-menu">
+        <a href="stitchlab.html">StitchLab</a>
 
-                <div>
-                    <span>SHOP</span>
-                    <a href="#">All Accessories</a>
-                    <a href="#">New Arrivals</a>
-                    <a href="#">Best Sellers</a>
-                </div>
+        <a href="about.html">About</a>
 
-                <div>
-                    <span>EXPLORE</span>
-                    <a href="#">Collections</a>
-                    <a href="#">The Edit</a>
-                    <a href="#">Lookbook</a>
-                </div>
-
-            </div>
-        </div>
-
-        <a href="#collections">Collections</a>
-
-        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
 
     </nav>
 
@@ -114,10 +94,11 @@
         </button>
 
         <nav>
-            <a href="#new">New In</a>
-            <a href="#shop">Shop</a>
-            <a href="#collections">Collections</a>
-            <a href="#about">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="stitchlab.html">StitchLab</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
     </div>
@@ -129,11 +110,13 @@
              HERO
         ====================================== -->
 
-        <section class="hero">
-<div class="hero-image">
-    <img src="images/Culture7.png"
-         alt="Hook & Knots fashion campaign">
-</div>
+        <section class="hero" aria-label="Hook & Knots visual collection">
+            <div class="hero-slideshow" id="heroSlideshow" aria-live="polite">
+                <div class="hero-slide is-active">
+                    <img src="images/Culture7.png" alt="Hook & Knots fashion campaign">
+                </div>
+            </div>
+            <div class="hero-shade"></div>
             <div class="hero-content">
 
                 <p class="eyebrow">THE NEW COLLECTION</p>
@@ -153,84 +136,10 @@
 
             </div>
 
-        </section>
-
-
-        <!-- =====================================
-             SHOP BY CATEGORY
-        ====================================== -->
-
-        <section class="section category-section" id="shop">
-
-            <div class="section-heading">
-
-                <div>
-                    <p class="eyebrow">EXPLORE</p>
-                    <h2>Shop by category</h2>
-                </div>
-
-                <a href="#" class="text-link">
-                    View all
-                </a>
-
-            </div>
-
-
-            <div class="category-grid">
-
-                <a href="#" class="category-card">
-
-                    <div class="category-card">
-    <a href="product.html">
-        <div class="category-image">
-            <img src="images/product blue crochet sandles .jpg"
-                 alt="Black Crochet Brown Leather Bag">
-        </div>
-                        <span>01</span>
-                    </div>
-
-                    <h3>Accessories</h3>
-
-                </a>
-
-
-                <a href="#" class="category-card">
-
-                    <div class="category-card">
-    <a href="product.html">
-        <div class="category-image">
-            <img src="images/product orange crochet sandles .JPG"
-                 alt="Black Crochet Brown Leather Bag">
-        </div>
-        
-    </a>
-</div>
-                        <span>02</span>
-                    </div>
-
-                    <h3>New Arrivals</h3>
-
-                </a>
-
-
-                <a href="#" class="category-card">
-
-                    <div class="category-card">
-    <a href="product.html">
-        <div class="category-image">
-            <img src="images/product purple sling bag1.JPG"
-                 alt="Black Crochet Brown Leather Bag">
-        </div>
-        
-    </a>
-</div>
-                        <span>03</span>
-                    </div>
-
-                    <h3>Collections</h3>
-
-                </a>
-
+            <div class="hero-status" aria-hidden="true">
+                <span id="heroSlideNumber">01</span>
+                <span class="hero-status-line"></span>
+                <span>HOOK &amp; KNOTS / 22</span>
             </div>
 
         </section>
@@ -344,7 +253,7 @@
                     your moments and your everyday style.
                 </p>
 
-                <a href="#" class="button button-light">
+                    <a href="gallery.html" class="button button-light">
                     Discover the collection
                 </a>
 
@@ -371,10 +280,38 @@
                 express themselves without compromise.
             </p>
 
-            <a href="#" class="text-link">
+            <a href="about.html" class="text-link">
                 Our story
             </a>
 
+        </section>
+
+        <section class="home-gallery-preview">
+            <div class="section-heading">
+                <div><p class="eyebrow">THE ARCHIVE</p><h2>See it in<br>full colour.</h2></div>
+                <a href="gallery.html" class="text-link">Open gallery</a>
+            </div>
+            <div class="home-gallery-strip">
+                <a href="gallery.html"><img src="images/culture4.png" alt="Hook & Knots campaign styling" loading="lazy"></a>
+                <a href="gallery.html"><img src="images/Blue crochet bag.jpg" alt="Blue crochet bag" loading="lazy"></a>
+                <a href="gallery.html"><img src="images/product orange crochet sandles .JPG" alt="Orange crochet sandals" loading="lazy"></a>
+                <a href="gallery.html"><img src="images/culture8.png" alt="Hook & Knots campaign portrait" loading="lazy"></a>
+            </div>
+        </section>
+
+        <section class="home-contact-preview">
+            <div><p class="eyebrow">CLIENT CARE</p><h2>Have a question?<br>Let's talk.</h2><p>For custom ideas, product questions, or order support, our team is one message away.</p><a class="contact-direct" href="contact.html">Visit contact <span>→</span></a></div>
+            <form class="contact-form homepage-contact-form" id="homepageContactForm">
+                <label for="homepageName">Name</label><input id="homepageName" name="name" type="text" placeholder="Your name" required>
+                <label for="homepageEmail">Email address</label><input id="homepageEmail" name="email" type="email" placeholder="you@example.com" required>
+                <label for="homepageMessage">Message</label><textarea id="homepageMessage" name="message" rows="3" placeholder="How can we help?" required></textarea>
+                <button class="button" type="submit">Send message</button><p class="form-status" id="homepageContactStatus" role="status"></p>
+            </form>
+        </section>
+
+        <section class="instagram-preview">
+            <div class="section-heading"><div><p class="eyebrow">FOLLOW THE EDIT</p><h2>@hookandknots</h2></div><a href="#" class="text-link">Instagram</a></div>
+            <div class="instagram-grid"><a href="#"><img src="images/culture6.png" alt="Hook & Knots campaign portrait" loading="lazy"></a><a href="#"><img src="images/product purple sling bag1.JPG" alt="Purple crochet sling bag" loading="lazy"></a><a href="#"><img src="images/culture9.png" alt="Hook & Knots campaign portrait" loading="lazy"></a><a href="#"><img src="images/black crochet brown leather bag.jpg" alt="Black crochet leather bag" loading="lazy"></a><a href="#"><img src="images/product blue crochet sandles .jpg" alt="Blue crochet sandals" loading="lazy"></a></div>
         </section>
 
 
@@ -456,8 +393,8 @@
             <div>
                 <h3>About</h3>
 
-                <a href="#about">Our Story</a>
-                <a href="#">Contact</a>
+                <a href="about.html">Our Story</a>
+                <a href="contact.html">Contact</a>
 
             </div>
 
@@ -497,6 +434,18 @@
         </div>
 
     </footer>
+
+
+    <a
+        class="whatsapp-button"
+        href="https://wa.me/254736953766?text=Hello%20Hook%20%26%20Knots"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with Hook & Knots on WhatsApp"
+    >
+        <span aria-hidden="true">WA</span>
+        WhatsApp
+    </a>
 
 
     <script src="js/script.js"></script>
